@@ -7,6 +7,24 @@ body, html{
   font-family: 'Poppins', sans-serif;
 }
 
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header-logo {
+  float: left;
+  font-size: 36px;
+  padding: 20px 40px;
+}
+
+.header-list li {
+  float: left;
+  padding: 33px 20px;
+}
+
 .w-50{
   width: 50%;
 }
