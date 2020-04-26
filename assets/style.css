@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.profile h1 {
+    text-align: center;
+    color:  rgb(115, 114, 111);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.profile .container {
+    display: flex;
+    width: 1000px;
+    height: 280px;
+    margin: 50px auto;
+}
+
+.profile .container .card {
+    flex-grow: 1;
+    margin: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: #ecf0f1;
+    cursor: pointer;
+    transition: all 1s 0.01s;
+}
+
+.profile .container .card:hover {
+    box-shadow: 0 0 20px rgba(189, 195, 199, 0.6);
+    transform: scale(1.1);
+}
+
+.profile .container .card .img {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.profile .container .card .img img {
+    width: 100px;
+    border-radius: 100%;
+}
+
+.profile .container .card .info {
+    width: 140px;
+    height: 50px;
+    text-align: center;
+    margin: 30px auto;
+}
+
+.profile .container .card .info .name {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(115, 114, 111);
+    font-size: 17px;
+}
+
+.profile .container .card .info .status {
+    font-family: sans-serif;
+    font-style: italic;
+    color: rgb(115, 114, 111);
+    font-weight: 100;
+    font-size: 14px;
+    text-align: center;
+}
+
+/*for tablet*/
+@media screen and (max-width: 1000px) {
+    .profile h1 {
+        font-size: 24px;
+    }
+
+    .profile .container {
+        width: 670px;
+        height: 200px;
+        margin: 25px auto;
+    }
+
+    .profile .container .card {
+        width: 100px;
+        margin: 8px;
+    }
+
+    .profile .container .card .img img {
+        width: 70px;
+    }
+
+    .profile .container .card .info .name {
+        font-size: 14px;
+    }
+
+    .profile .container .card .info .status {
+        font-size: 12px;
+    }
+
+    .profile .container .card .info {
+        width: 100px;
+        margin-top: 20px auto;
+    }
+}
+
+/*for smartphone*/
+@media screen and (max-width: 670px) {
+    .profile h1 {
+        font-size: 30px;
+    }
+    
+    .profile .container {
+        flex-direction: column;
+        height: 1000px;
+        width: 300px;
+        margin: 30px auto;
+    }
+
+    .profile .container .card {
+        flex-grow: 1;
+        width: auto;
+    }
+
+    .profile .container .card .img img {
+        width: 90px;
+    }
+
+    .profile .container .card .info .name {
+        font-size: 17px;
+    }
+
+    .profile .container .card .info .status {
+        font-size: 14px;
+    }
+
+    .profile .container .card .info {
+        width: 140px;
+    }
+}
