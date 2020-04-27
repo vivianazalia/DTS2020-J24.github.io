@@ -53,7 +53,7 @@ body, html{
 
 .mainnav{
   z-index: 999;
-  position: sticky;
+  position: fixed;
   top:0;
   left:0;
   width: 100vw;
@@ -176,12 +176,14 @@ body, html{
   /*================ navigasi nyampe sini aja ==================*/
 
 .profile{
-    padding-top:5rem;
+    padding-top:4rem;
 }
 .profile h1 {
     text-align: center;
-    color:  rgb(115, 114, 111);
+    color: #fff;
     font-family: 'Roboto Condensed', sans-serif;
+    background-color: #e94d90;
+    padding: 25px;
 }
 
 .profile .container {
@@ -252,6 +254,7 @@ body, html{
   }
 
   header .flex-container{
+    padding-top:4rem;
     overflow: hidden;
     display: inline-flex;
     justify-content: center;
@@ -491,6 +494,9 @@ body, html{
 
 /*for smartphone*/
 @media screen and (max-width: 670px) {
+  header .flex-container{
+    padding-top: 0;
+  }
   .mainnav{
     position: fixed;
   }
