@@ -415,6 +415,14 @@ body, html{
   }
   .partners img{
     height: 50px;
+    filter: grayscale(100%);
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all .3s;
+  }
+  .partners img:hover{
+    filter: grayscale(0%);
+    opacity: 1;
   }
   .partners div {
     padding: 1rem 1.5rem;
