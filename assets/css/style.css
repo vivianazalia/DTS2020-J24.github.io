@@ -407,6 +407,18 @@ body, html{
     cursor: pointer;
     color: rgb(126, 126, 126);
   }
+
+  .partners{
+    max-width: 1170px;margin:auto;
+    display: flex;
+    justify-content: center;
+  }
+  .partners img{
+    height: 50px;
+  }
+  .partners div {
+    padding: 1rem 1.5rem;
+  }
   
   /*message form end*/
   
@@ -459,8 +471,8 @@ body, html{
 
 /*footer*/
 @import url(font-awesome.min.css);
-#footer {
-		background: #f0f0f0;
+footer {
+		background: #3f3d55;
 		padding: 4em 0 4em 0;
 		text-align: center;
 	}
@@ -472,6 +484,7 @@ body, html{
 			-ms-transition: opacity 0.2s ease-in-out;
 			transition: opacity 0.2s ease-in-out;
       opacity: 0.35;
+      color:white;
 		}
 
 		#footer .icons a:hover {
@@ -574,6 +587,14 @@ body, html{
 
 /*for smartphone*/
 @media screen and (max-width: 670px) {
+
+  .partners img{
+    height: 35px;
+  }
+  .partners div {
+    padding: .75rem 1.25rem;
+  }
+
   .formimage{
     display: none;
   }
