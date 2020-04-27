@@ -187,7 +187,6 @@ body, html{
 .profile .container {
     display: flex;
     width: 1170px;
-    height: 280px;
     margin: 50px auto;
 }
 
@@ -417,6 +416,32 @@ body, html{
       transform:translateY(0);
     }
   }
+
+  /*======== bagian quote ========*/
+
+  .fluid-container{
+    width: 100%;
+  }
+  #quote{
+    margin:10rem 0;
+    padding:5rem 0;
+    background: rgba(178,180,181,.1);
+  }
+  #quote p{
+    padding:1rem 15vw;
+    font-size:24px;
+  }
+  #quote p:nth-child(1){
+    font-style: oblique;
+    text-align: center;
+  }
+  #quote p:nth-child(2){
+    text-align: right;
+    font-style: oblique;
+    font-size: 18px;
+    font-weight: lighter;
+  }
+
 @media screen and (min-height:800px) and (min-width:900px){
   header {
     height:auto!important;
@@ -436,10 +461,8 @@ body, html{
     .profile h1 {
         font-size: 24px;
     }
-
     .profile .container {
         width: 670px;
-        height: 200px;
         margin: 25px auto;
     }
 
@@ -489,7 +512,6 @@ body, html{
     
     .profile .container {
         flex-direction: column;
-        height: 1000px;
         width: 300px;
         margin: 30px auto;
     }
@@ -540,5 +562,13 @@ body, html{
     }
     .messageForm [type="submit"]{
       width: 105%;
-  }
+    }
+
+    /* responsive quote */
+    #quote p:nth-child(1){
+      font-size: 18px;
+    }
+    #quote p:nth-child(2){
+      font-size: 14px;
+    }
 }
