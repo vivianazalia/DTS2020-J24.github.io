@@ -180,8 +180,10 @@ body, html{
 }
 .profile h1 {
     text-align: center;
-    color:  rgb(115, 114, 111);
+    color:  #fff;
     font-family: 'Roboto Condensed', sans-serif;
+    background-color: #e94d90;
+    padding: 25px;
 }
 
 .profile .container {
