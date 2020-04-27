@@ -17,7 +17,6 @@ body, html{
     padding: 0;
     margin: 0;
 }
-
 /*=== head navigation ====*/
 .container {
     max-width: 1170px;
@@ -55,7 +54,7 @@ body, html{
 
 .mainnav{
   z-index: 999;
-  position: sticky;
+  position: fixed;
   top:0;
   left:0;
   width: 100vw;
@@ -178,7 +177,7 @@ body, html{
   /*================ navigasi nyampe sini aja ==================*/
 
 .profile{
-    padding-top:5rem;
+    padding-top:4rem;
 }
 .profile h1 {
     text-align: center;
@@ -256,6 +255,7 @@ body, html{
   }
 
   header .flex-container{
+    padding-top:4rem;
     overflow: hidden;
     display: inline-flex;
     justify-content: center;
@@ -315,8 +315,9 @@ body, html{
 
 /*message form start*/
 .formcontainer{
-  margin-left: 10px;
-  margin-right: 10px;
+  width: 100%;
+  display: inline-flex;
+  justify-content: flex-end;
 }
 
 .messageForm {
@@ -406,6 +407,26 @@ body, html{
     cursor: pointer;
     color: rgb(126, 126, 126);
   }
+
+  .partners{
+    max-width: 1170px;margin:auto;
+    display: flex;
+    justify-content: center;
+  }
+  .partners img{
+    height: 50px;
+    filter: grayscale(100%);
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all .3s;
+  }
+  .partners img:hover{
+    filter: grayscale(0%);
+    opacity: 1;
+  }
+  .partners div {
+    padding: 1rem 1.5rem;
+  }
   
   /*message form end*/
   
@@ -446,6 +467,10 @@ body, html{
     font-weight: lighter;
   }
 
+  .formimage{
+    width: 40%;margin: 60px auto;display: flex;
+  }
+
 @media screen and (min-height:800px) and (min-width:900px){
   header {
     height:auto!important;
@@ -454,8 +479,8 @@ body, html{
 
 /*footer*/
 @import url(font-awesome.min.css);
-#footer {
-		background: #f0f0f0;
+footer {
+		background: #3f3d55;
 		padding: 4em 0 4em 0;
 		text-align: center;
 	}
@@ -466,7 +491,8 @@ body, html{
 			-o-transition: opacity 0.2s ease-in-out;
 			-ms-transition: opacity 0.2s ease-in-out;
 			transition: opacity 0.2s ease-in-out;
-			opacity: 0.35;
+      opacity: 0.35;
+      color:white;
 		}
 
 		#footer .icons a:hover {
@@ -569,6 +595,20 @@ body, html{
 
 /*for smartphone*/
 @media screen and (max-width: 670px) {
+
+  .partners img{
+    height: 35px;
+  }
+  .partners div {
+    padding: .75rem 1.25rem;
+  }
+
+  .formimage{
+    display: none;
+  }
+  header .flex-container{
+    padding-top: 0;
+  }
   .mainnav{
     position: fixed;
   }
